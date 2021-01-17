@@ -37,7 +37,7 @@ $ npm install @actions/exec
 ```
 <br/>
 
-:ice_cream: [@actions/glob](packages/glob)
+:ice_cream:
 
 Provides functions to search for files matching glob patterns. Read more [here](packages/glob)
 
@@ -198,7 +198,7 @@ Create an action that is delivered as a container which uses the toolkit.  This 
 FROM node:slim
 COPY . .
 RUN npm install --production
-ENTRYPOINT ["node", "/lib/main.js"]
+ENTRYPOINT
 ```
 ```javascript
 const myInput = core.getInput('myInput');
